@@ -1,0 +1,120 @@
+/* Estrutura do site */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: url(../img/fundo.png) repeat-x;
+
+}
+
+#conteiner {
+    width: 750px;
+    margin: 0 auto; 
+}
+
+#topo {
+    height: 150px;
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 152px; /* do tamanho da imagem */
+    height: 66px; /* do tamanho da imagem */
+    background: url(../img/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+/* Barra de Navegação */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left; /* flutuar igual o <li> */
+    
+}
+
+#topo ul li {
+    float: left; /* um ao lado do outro */
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.3em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../img/divisor.png) no-repeat left center;
+
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia, 
+body.fotos #navegacao a#fotos{ 
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/* Configura layout de três colunas */
+
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+#primario {
+    width: 270px;
+    float: left;
+    background: blue;
+    margin: 0 0 20px 195px;
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+    background: pink;
+}
+
+#lateral {
+    background: red;
+    float: left;
+    width: 180px;
+    margin: 0 0 20px -750px;
+}
+
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+
+}
